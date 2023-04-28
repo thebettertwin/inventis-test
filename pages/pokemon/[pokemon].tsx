@@ -68,7 +68,7 @@ export default function PokemonDetailsPage() {
 
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen">
             <nav className="flex items-center justify-between p-4">
                 <Link href="/"><Home /></Link>
                 <div className="flex items-center font-extralight">
@@ -78,7 +78,7 @@ export default function PokemonDetailsPage() {
                     <Image className="mx-2 self-center" alt='Grogu image for Yoda language' src="/grogu.png" width="40" height="40" />
                 </div>
             </nav>
-            <article className="flex flex-col m-auto max-w-2xl items-center after:absolute after:-z-20 after:h-[300px] after:w-[800px]  after:rounded-full after:-translate-y-3/4 after:left-1/4 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-3xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-red-900/10 after:dark:from-orange-200 after:dark:via-orange-400/40">
+            <article className="flex flex-col mx-auto max-w-2xl items-center after:absolute after:-z-20 after:h-[300px] after:w-[800px]  after:rounded-full after:-translate-y-3/4 after:left-1/4 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-3xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-red-900/10 after:dark:from-orange-200 after:dark:via-orange-400/40">
                 <Image alt={pokemon.name + ' image'} src={pokemon.image} width="250" height="250" />
                 <h1 className="text-4xl font-bold capitalize">{pokemon.name}</h1>
                 <ul className="flex gap-4 my-4">
